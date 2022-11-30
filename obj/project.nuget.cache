@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sdOlzvhRcL/GJh+B+5zkx0vCtZqFZ9NRZgzq6DXyF1Ktvqt8vsYSi2PWbvSik3YGo8mO7rsWcicJXDcF0hAohA==",
+  "dgSpecHash": "e/1jRH4Tzb48aOs2C7FhwymlGF8HEwrjg5Kzzz3Y053cO43+Prd1jTob7ZWLU9XweHf7sSpkUiJ0luhciepV3g==",
   "success": true,
-  "projectFilePath": "/home/developer/advent-of-code-c#/advent-of-code-c#.csproj",
+  "projectFilePath": "C:\\Users\\andrewlee\\source\\repos\\andrew-lee-metaswitch\\advent-of-code-csharp\\andrewlee-adventofcode2022-csharp.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

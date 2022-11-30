@@ -8,24 +8,26 @@
     "net6.0": []
   },
   "packageFolders": {
-    "/home/developer/.nuget/packages/": {}
+    "C:\\Users\\andrewlee\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/developer/advent-of-code-c#/advent-of-code-c#.csproj",
-      "projectName": "advent-of-code-c#",
-      "projectPath": "/home/developer/advent-of-code-c#/advent-of-code-c#.csproj",
-      "packagesPath": "/home/developer/.nuget/packages/",
-      "outputPath": "/home/developer/advent-of-code-c#/obj/",
+      "projectUniqueName": "C:\\Users\\andrewlee\\Source\\Repos\\andrew-lee-metaswitch\\advent-of-code-csharp\\andrewlee-adventofcode2022-csharp.csproj",
+      "projectName": "andrewlee-adventofcode2022-csharp",
+      "projectPath": "C:\\Users\\andrewlee\\Source\\Repos\\andrew-lee-metaswitch\\advent-of-code-csharp\\andrewlee-adventofcode2022-csharp.csproj",
+      "packagesPath": "C:\\Users\\andrewlee\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\andrewlee\\Source\\Repos\\andrew-lee-metaswitch\\advent-of-code-csharp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/developer/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\andrewlee\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -49,7 +51,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -58,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.300/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
