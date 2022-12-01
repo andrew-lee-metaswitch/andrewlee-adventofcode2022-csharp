@@ -10,34 +10,64 @@ namespace andrewlee_adventofcode2022_csharp
     {
         public override int Part1Solve()
         {
-            string[] day1_inputs = LoadInputs("202101");
-            int count_of_increases = 0;
-            for (int i = 1; i < day1_inputs.Count(); i++)
+            string[] inputs = LoadInputs("202201");
+            int caloriesCarriedByBiggestElf = 0;
+            int caloriesCarriedByElf = 0;
+            for (int i = 1; i < inputs.Count(); i++)
             {
-                if (Int32.Parse(day1_inputs[i]) > Int32.Parse(day1_inputs[i - 1]))
+                if (String.IsNullOrWhiteSpace(inputs[i]))
                 {
-                    count_of_increases++;
+                    caloriesCarriedByBiggestElf = Math.Max(caloriesCarriedByBiggestElf, caloriesCarriedByElf);
+                    caloriesCarriedByElf = 0;
                 }
-                // Do something
+                else
+                {
+                    caloriesCarriedByElf += Int32.Parse(inputs[i]);
+                }
             }
-            return count_of_increases;
+            return caloriesCarriedByBiggestElf;
 
         }
 
         public override int Part2Solve()
         {
-            string[] day1_inputs = this.LoadInputs("202101");
-            int count_of_increases2 = 0;
-            for (int i = 3; i < day1_inputs.Count(); i++)
+            string[] inputs = this.LoadInputs("202201");
+            int[] caloriesCarriedByBiggestThreeElves = new int[] { 0, 0, 0 };
+            int caloriesCarriedByElf = 0;
+            for (int i = 1; i < inputs.Count(); i++)
             {
-                if (Int32.Parse(day1_inputs[i]) > Int32.Parse(day1_inputs[i - 3]))
+                if (String.IsNullOrWhiteSpace(inputs[i]))
                 {
-                    count_of_increases2++;
-                }
-                // Do something
-            }
-            return count_of_increases2;
+                    if (caloriesCarriedByElf >= caloriesCarriedByBiggestThreeElves[2])
+                    {
+                        caloriesCarriedByBiggestThreeElves = new int[] {
+                            caloriesCarriedByBiggestThreeElves[1],
+                            caloriesCarriedByBiggestThreeElves[2],
+                            caloriesCarriedByElf
+                            };
 
+                    }
+                    else if (caloriesCarriedByElf >= caloriesCarriedByBiggestThreeElves[1])
+                    {
+                        caloriesCarriedByBiggestThreeElves = new int[] {
+                            caloriesCarriedByBiggestThreeElves[1],
+                            caloriesCarriedByElf,
+                            caloriesCarriedByBiggestThreeElves[2]
+                                };
+                    }
+                    else if (caloriesCarriedByElf >= caloriesCarriedByBiggestThreeElves[0])
+                    {
+                        caloriesCarriedByBiggestThreeElves[0] = caloriesCarriedByElf;
+
+                    }
+                    caloriesCarriedByElf = 0;
+                }
+                else
+                {
+                    caloriesCarriedByElf += Int32.Parse(inputs[i]);
+                }
+            }
+            return caloriesCarriedByBiggestThreeElves.Sum();
         }
     }
- }
+}

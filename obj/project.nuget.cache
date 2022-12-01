@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "e/1jRH4Tzb48aOs2C7FhwymlGF8HEwrjg5Kzzz3Y053cO43+Prd1jTob7ZWLU9XweHf7sSpkUiJ0luhciepV3g==",
+  "dgSpecHash": "qCAIMcUeh70ZE5qhRVasiifsQZxcFjUqL7AIHkj0LlQDYiOVgu8QswrN/v8Igns34nYeAeUBPEjnDfLA6NnxRw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\andrewlee\\source\\repos\\andrew-lee-metaswitch\\advent-of-code-csharp\\andrewlee-adventofcode2022-csharp.csproj",
+  "projectFilePath": "C:\\Users\\andrewlee\\source\\repos\\andrew-lee-metaswitch\\advent-of-code2022-csharp\\andrewlee-adventofcode2022-csharp.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

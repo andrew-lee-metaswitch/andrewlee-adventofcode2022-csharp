@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\andrewlee\\Source\\Repos\\andrew-lee-metaswitch\\advent-of-code-csharp\\andrewlee-adventofcode2022-csharp.csproj",
+      "projectUniqueName": "C:\\Users\\andrewlee\\source\\repos\\andrew-lee-metaswitch\\advent-of-code2022-csharp\\andrewlee-adventofcode2022-csharp.csproj",
       "projectName": "andrewlee-adventofcode2022-csharp",
-      "projectPath": "C:\\Users\\andrewlee\\Source\\Repos\\andrew-lee-metaswitch\\advent-of-code-csharp\\andrewlee-adventofcode2022-csharp.csproj",
+      "projectPath": "C:\\Users\\andrewlee\\source\\repos\\andrew-lee-metaswitch\\advent-of-code2022-csharp\\andrewlee-adventofcode2022-csharp.csproj",
       "packagesPath": "C:\\Users\\andrewlee\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\andrewlee\\Source\\Repos\\andrew-lee-metaswitch\\advent-of-code-csharp\\obj\\",
+      "outputPath": "C:\\Users\\andrewlee\\source\\repos\\andrew-lee-metaswitch\\advent-of-code2022-csharp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\andrewlee\\AppData\\Roaming\\NuGet\\NuGet.Config",
