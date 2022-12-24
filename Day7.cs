@@ -87,12 +87,12 @@ namespace andrewlee_adventofcode2022_csharp
                 }
                 else if (Regex.IsMatch(input, cdUpRegex))
                 {
-                    currentWorkingDirectory = AllDirectories.SingleOrDefault(d => d.path == currentWorkingDirectory.parentDirectoryPath());
+                    currentWorkingDirectory = AllDirectories.SingleOrDefault(d => d.path == currentWorkingDirectory.parentDirectoryPath()) ?? AllDirectories[0];
                 }
                 else if (Regex.IsMatch(input, cdDownRegex))
                 {
                     string name = Regex.Match(input, cdDownRegex).Groups[1].Value;
-                    currentWorkingDirectory = AllDirectories.SingleOrDefault(d => d.path == $"{currentWorkingDirectory.path}{name}/");
+                    currentWorkingDirectory = AllDirectories.SingleOrDefault(d => d.path == $"{currentWorkingDirectory.path}{name}/") ?? AllDirectories[0];
                 }
             }
             return AllDirectories;

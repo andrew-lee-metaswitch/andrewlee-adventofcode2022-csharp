@@ -20,7 +20,8 @@ namespace andrewlee_adventofcode2022_csharp
             {
                 RPS.Rock => RPS.Paper,
                 RPS.Paper => RPS.Scissors,
-                RPS.Scissors => RPS.Rock
+                RPS.Scissors => RPS.Rock,
+                _ => throw new Exception("Unexpected RPS Value"),
             };
         }
 
@@ -30,7 +31,8 @@ namespace andrewlee_adventofcode2022_csharp
             {
                 RPS.Rock => RPS.Scissors,
                 RPS.Paper => RPS.Rock,
-                RPS.Scissors => RPS.Paper
+                RPS.Scissors => RPS.Paper,
+                _ => throw new Exception("Unexpected RPS Value"),
             };
         }
 
@@ -55,6 +57,7 @@ namespace andrewlee_adventofcode2022_csharp
                 RPS.Rock => 1,
                 RPS.Paper => 2,
                 RPS.Scissors => 3,
+                _ => throw new Exception("Unexpected RPS Value"),
             };
             return roundScore;
         }

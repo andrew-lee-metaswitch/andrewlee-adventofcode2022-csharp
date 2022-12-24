@@ -26,7 +26,12 @@ namespace andrewlee_adventofcode2022_csharp
 
         public class Column
         {
-            public List<char>? Crates;
+            public List<char> Crates;
+
+            public Column()
+            {
+                Crates = new List<char> { };
+            }
 
             public List<char> Remove(int n)
             {
@@ -37,10 +42,6 @@ namespace andrewlee_adventofcode2022_csharp
 
             public void Add(List<char> newCrates)
             {
-                if (Crates == null) {
-                    Crates = new List<char> { };
-                }
-
                 Crates.Reverse();
                 Crates.AddRange(newCrates);
                 Crates.Reverse();
